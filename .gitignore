@@ -1,0 +1,9 @@
+# Ignorar archivos de configuración sensibles
+.env
+
+
+/bin/
+/vendor/
+
+
+docker-data/

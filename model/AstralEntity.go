@@ -15,4 +15,7 @@ type AstralEntity struct {
 	Size        float64 `gorm:"type:decimal(10,2)" json:"size"`         // Tamaño en kilómetros
 	Temperature int     `gorm:"type:int" json:"temperature"`            // Temperatura en Kelvin (debe ser >= 0)
 	Age         int     `gorm:"type:int" json:"age"`                    // Edad en millones de años
+	FileSizeMB  float64 `gorm:"type:decimal(10,2)" json:"file_size_mb"`
+	ImageURL    string  `gorm:"type:varchar(255)" json:"image_url"` // URL de la imagen en S3
+	FileURL     string  `gorm:"type:varchar(255)" json:"file_url"`  // URL del archivo de Unity en S3
 }
